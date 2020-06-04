@@ -1,0 +1,25 @@
+body, html {
+    height: 100%;
+
+    background-image: url("../images/World-Map.jpg");
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card-img-top {
+    width: 100%;
+    max-height: 40vh;
+    object-fit: contain;
+}
+
+.header-container-wrapper {
+	background-color: green
+}   
+
+.btn-primary {
+  background-color: rgb(4, 94, 44) !important;
+}
+
+/* used !important to override default Bootstrap button properties...may or may not have been a good idea */
