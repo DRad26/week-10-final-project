@@ -4,7 +4,7 @@ body, html {
     background-image: url("../images/World-Map.jpg");
     
     background-position: center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
   }
 
@@ -14,12 +14,48 @@ body, html {
     object-fit: contain;
 }
 
-.header-container-wrapper {
+/* .header-container-wrapper {
 	background-color: green
-}   
+}    */
 
 .btn-primary {
   background-color: rgb(4, 94, 44) !important;
 }
 
-/* used !important to override default Bootstrap button properties...may or may not have been a good idea */
+/* #wrapper{
+  border:10px solid #0b0;
+  min-height:250px;
+  height:100%;
+  width: 100%;
+} */
+
+.container-fluid {
+  padding-top: 75px;
+}
+
+
+.navbar a{
+  font-family: Verdana !important;
+  font-weight: 900;
+  wrap: wrap;
+}
+
+
+
+
+/* footer {
+  position: absolute;
+  background:  rgb(4, 94, 44);
+  color: white;
+  height: 95px;
+  bottom: 0;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    
+} */

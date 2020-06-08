@@ -1,35 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Seattle 911 Calls</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+      integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+      crossorigin=""
+    ></script>
+    
+    <link rel="stylesheet" href="css/styles.css">
+
     <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
+      #mapid {
+        height: 500px;
       }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
+      
     </style>
   </head>
+
   <body>
-    <div id="map"></div>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
-    async defer></script>
+
+    <header> 
+      <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light"><a class="navbar-brand" href="#">Favorite Whiskey by Continent</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+       <ul class="navbar-nav">
+         <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Africa, Asia,..." aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search Continent</button>
+        </form>
+       </ul>
+     </div>
+   </nav>
+  </header>
+
+    <div class="container">
+      <h1>Sullivan's Cove Distillery </h1>
+
+      <p>
+        
+        
+      </p>
+
+      <div id="mapid"></div>
+    </div>
+
+    <div class="card" style="margin-top: 50px;">
+      <h5 class="card-header">Sullivan's Cove Distillery</h5>
+      <div class="card-body">
+        <h5 class="card-title">Australia</h5>
+        <p class="card-text">Sullivans Cove French Oak Single Cask Tasmanian single malt whisky has become a legend in its own right, one of the most sought after whiskies in the world, and the bottle that put the Australian whisky industry on the map after winning World’s Best Single Malt at the World Whiskies Awards in 2014. Aged in 300L French Oak ex-tawny barrels, this whisky has rich flavours of Christmas spice, chocolate, dried fruit and powerful oak. As a single cask bottling, every tiny batch is different, expressing the unique characteristics of each barrel.</p>
+        <a href="https://sullivanscove.com/" class="btn btn-primary">Company Website</a>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/3.0.0/fetch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script src= appAu.js></script>
   </body>
 </html>
